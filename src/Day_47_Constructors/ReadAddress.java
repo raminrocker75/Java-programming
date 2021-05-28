@@ -8,6 +8,6 @@ public class ReadAddress {
         address.setState("Mo");
         address.setZipcode("63146");
 
-        System.out.println(address.getStreet()+ " " +address.getCity()+" " +address.getState()+" "+address.getZipcode()+". "+address.getCountry());
+        System.out.println(address.toString());
     }
 }
