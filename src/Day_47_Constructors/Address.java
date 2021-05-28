@@ -3,9 +3,28 @@ package Day_47_Constructors;
 public class Address {
        private String street ;
        private String city ;
-        private String state;
-        private String zipcode ;
-        private String country = "usa";
+       private String state;
+       private String zipcode ;
+       private String country = "USA";
+
+        // constructor - automatically called
+        public Address(){
+            System.out.println("Address constructor");
+            street = "123 unknown st";
+            city = "java St";
+            state = "WS";
+            zipcode= "0000";
+        }
+
+        // second constructor, overloaded constructor -> provides shortcut to initialize variables
+    // in same statement: ex address ad = new Address ("12203 Dorsett Rd", "Maryland Heights", "MO", "63043");
+        public Address(String street, String city , String state , String zipcode){
+            this.street = street;
+            this.state = state;
+            this.city = city;
+            this.zipcode = zipcode;
+            setStreet(street);
+        }
 
     @Override
     public String toString() {
@@ -17,7 +36,11 @@ public class Address {
     }
 
     public void setStreet(String street) {
-        this.street = street;
+            if (street.isEmpty() || street.length() > 50){
+                System.out.println("Error: Invalid Street");
+            }else {
+                this.street = street;
+            }
     }
 
     public String getCity() {
