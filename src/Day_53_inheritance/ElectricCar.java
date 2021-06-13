@@ -7,6 +7,26 @@ public class ElectricCar {
     private int year;
     private int range;
 
+    public ElectricCar(String model, String make, double price, int year, int range) {
+        this.model = model;
+        setMake(make); // reuse the code in the setter condition
+        this.price = price;
+        this.year = year;
+        this.range = range;
+    }
+
+    @Override
+    public String toString() {
+
+        return "ElectricCar{" +
+                "model='" + model + '\'' +
+                ", make='" + make + '\'' +
+                ", price=" + price +
+                ", year=" + year +
+                ", range=" + range +
+                '}';
+    }
+
     public ElectricCar(int range) {
         this.range = range;
     }
@@ -33,7 +53,11 @@ public class ElectricCar {
     }
 
     public void setMake(String make) {
-        this.make = make;
+        if(make.isEmpty()){
+            System.out.println("Error: make cannot blank");
+        }else {
+            this.make = make;
+        }
     }
 
     public double getPrice() {
