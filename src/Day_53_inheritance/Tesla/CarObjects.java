@@ -1,4 +1,4 @@
-package Day_53_inheritance;
+package Day_53_inheritance.Tesla;
 
 public class CarObjects {
     public static void main(String[] args) {
@@ -29,6 +29,12 @@ public class CarObjects {
         roadster.drive(600);
         System.out.println(roadster.getCount()); // static method is inherited
 
-
+        ModelX modelX = new ModelX("Tesla","Model X" , 89990.0,2021,360);
+        System.out.println(modelX.toString());
+        modelX.drive(10);
+        System.out.println("Having lunch");
+        modelX.drive(10);
+        System.out.println("Range remaining = " + modelX.getRange());
+        System.out.println("Total electric cars count = " + ElectricCar.getCount());
     }
 }

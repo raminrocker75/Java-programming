@@ -1,4 +1,6 @@
-package Day_53_inheritance;
+package Day_53_inheritance.Tesla;
+
+import Day_53_inheritance.Tesla.ElectricCar;
 
 public class Roadster extends ElectricCar {
 //        Roadster roadster = new Roadster("Roadster",20000,2022,620);

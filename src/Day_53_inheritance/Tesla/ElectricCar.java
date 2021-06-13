@@ -1,4 +1,4 @@
-package Day_53_inheritance;
+package Day_53_inheritance.Tesla;
 
 public class ElectricCar {
     private String model;
