@@ -6,6 +6,7 @@ public class ElectricCar {
     private double price;
     private int year;
     private int range;
+    private static int count; // all objects will share this variable
 
     public ElectricCar(String model, String make, double price, int year, int range) {
         this.model = model;
@@ -13,6 +14,7 @@ public class ElectricCar {
         this.price = price;
         this.year = year;
         this.range = range;
+        count++; // increase count by 1 every time a new car is created
     }
 
     @Override
