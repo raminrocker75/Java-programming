@@ -85,4 +85,12 @@ public class ElectricCar {
     public void setRange(int range) {
         this.range = range;
     }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static void setCount(int count) {
+        ElectricCar.count = count;
+    }
 }
