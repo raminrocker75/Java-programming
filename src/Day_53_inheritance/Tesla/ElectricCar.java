@@ -1,6 +1,6 @@
 package Day_53_inheritance.Tesla;
 
-public class ElectricCar {
+public class ElectricCar extends Object{
     private String model;
     private String make;
     private double price;
