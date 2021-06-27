@@ -5,6 +5,7 @@ public class PhoneTest {
         Phone phone = new Phone();
         Mobile mobile= new Mobile();
 
+        Phone.use();
         phone.call();
         mobile.text();
         mobile.call();
