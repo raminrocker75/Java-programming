@@ -19,6 +19,7 @@ class OnlineStudent extends AbstractPractice {
             onlineStudent.code("Java");
             onlineStudent.attendClass();
 
+
         }
     }
 }
