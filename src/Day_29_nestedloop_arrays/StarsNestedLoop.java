@@ -12,7 +12,7 @@ public class StarsNestedLoop {
         System.out.println("\n==========================");
         System.out.println();
 
-        for (int outer = 1 ; outer<= 10 ; outer++){
+        for (int outer = 1 ; outer<= 5 ; outer++){
             for (int inner = 1 ; inner<=outer ; inner++){
                 System.out.print("* ");
             }
